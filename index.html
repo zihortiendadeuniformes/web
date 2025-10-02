@@ -1,0 +1,511 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head><script src="https://static.readdy.ai/static/e.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZIHOR - Maquinaria de Bordado Profesional</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#2563eb',
+secondary: '#1e40af'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+.logo-font {
+font-family: 'Playfair Display', serif;
+}
+.smooth-scroll {
+scroll-behavior: smooth;
+}
+.hero-bg {
+background-image: url('https://readdy.ai/api/search-image?query=modern%20industrial%20embroidery%20machine%20workshop%20with%20professional%20lighting%2C%20clean%20white%20background%2C%20high-tech%20manufacturing%20environment%2C%20minimal%20design%2C%20professional%20photography&width=1920&height=1080&seq=hero001&orientation=landscape');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+</style>
+</head>
+<body class="smooth-scroll bg-white">
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="logo-font text-2xl font-bold text-gray-900">ZIHOR</div>
+<nav class="hidden md:flex space-x-8">
+<a href="#inicio" class="text-gray-700 hover:text-primary transition-colors">Inicio</a>
+<a href="#productos" class="text-gray-700 hover:text-primary transition-colors">Productos</a>
+<a href="#testimonios" class="text-gray-700 hover:text-primary transition-colors">Testimonios</a>
+<a href="#contacto" class="text-gray-700 hover:text-primary transition-colors">Contacto</a>
+</nav>
+<button class="md:hidden w-6 h-6 flex items-center justify-center" id="mobile-menu-btn">
+<i class="ri-menu-line text-xl"></i>
+</button>
+</div>
+</div>
+<div class="md:hidden hidden bg-white border-t border-gray-100" id="mobile-menu">
+<div class="px-4 py-2 space-y-1">
+<a href="#inicio" class="block px-3 py-2 text-gray-700 hover:text-primary">Inicio</a>
+<a href="#productos" class="block px-3 py-2 text-gray-700 hover:text-primary">Productos</a>
+<a href="#testimonios" class="block px-3 py-2 text-gray-700 hover:text-primary">Testimonios</a>
+<a href="#contacto" class="block px-3 py-2 text-gray-700 hover:text-primary">Contacto</a>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section id="inicio" class="hero-bg min-h-screen flex items-center relative">
+<div class="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-transparent"></div>
+<div class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-2xl">
+<h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+Maquinaria de Bordado
+<span class="text-primary">Profesional</span>
+</h1>
+<p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+Descubre la línea completa de máquinas de bordado Gangduo. Desde equipos de 1 cabeza hasta sistemas de 4 cabezas para maximizar tu productividad.
+</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button onclick="document.getElementById('productos').scrollIntoView({behavior: 'smooth'})"
+class="!rounded-button whitespace-nowrap bg-primary text-white px-6 sm:px-8 py-3 sm:py-4 font-semibold hover:bg-secondary transition-colors text-sm sm:text-base">
+Ver Catálogo
+</button>
+<a href="https://wa.me/18296433461" target="_blank"
+class="!rounded-button whitespace-nowrap border-2 border-primary text-primary px-6 sm:px-8 py-3 sm:py-4 font-semibold hover:bg-primary hover:text-white transition-colors text-center text-sm sm:text-base">
+Cotizar Ahora
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">¿Por Qué Elegir ZIHOR?</h2>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">
+Somos especialistas en maquinaria de bordado con años de experiencia brindando soluciones profesionales para tu negocio.
+</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+<div class="text-center bg-white p-6 sm:p-8 rounded-xl shadow-sm">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-award-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-4">Calidad Garantizada</h3>
+<p class="text-gray-600">Máquinas Gangduo con la más alta calidad y durabilidad en el mercado.</p>
+</div>
+<div class="text-center bg-white p-6 sm:p-8 rounded-xl shadow-sm">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-customer-service-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-4">Soporte Técnico</h3>
+<p class="text-gray-600">Asistencia técnica especializada y servicio post-venta completo.</p>
+</div>
+<div class="text-center bg-white p-6 sm:p-8 rounded-xl shadow-sm">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-truck-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-4">Entrega Rápida</h3>
+<p class="text-gray-600">Entrega e instalación profesional en tiempo récord.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Products Section -->
+<section id="productos" class="py-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Catálogo de Productos</h2>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">
+Descubre nuestra línea completa de máquinas de bordado Gangduo, diseñadas para diferentes necesidades de producción.
+</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+<!-- Producto 1 -->
+<div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+<div class="aspect-w-16 aspect-h-12 bg-gray-100">
+<img src="https://static.readdy.ai/image/7d2604c93087d4109c8f340f7562dacb/df5eccce1b6875a7fde19381176055bf.webp"
+alt="Máquina de Bordado 1 Cabeza" class="w-full h-64 object-cover object-top">
+</div>
+<div class="p-4 sm:p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Gangduo 1 Cabeza</h3>
+<p class="text-gray-600 mb-4">Perfecta para emprendedores y pequeños negocios. Máxima precisión en bordados de alta calidad.</p>
+<div class="flex items-center justify-between mb-4">
+<span class="text-2xl font-bold text-primary">$349,000 DOP</span>
+<span class="text-sm text-gray-500">Precio referencial</span>
+</div>
+<ul class="text-sm text-gray-600 mb-6 space-y-1">
+<li>• Área de bordado: 400 x 400 mm</li>
+<li>• Velocidad: 1000 ppm</li>
+<li>• 15 colores automáticos</li>
+<li>• Pantalla táctil 7"</li>
+</ul>
+<a href="https://wa.me/18296433461?text=Hola, me interesa la máquina Gangduo de 1 cabeza. ¿Podrían enviarme más información?"
+target="_blank"
+class="!rounded-button whitespace-nowrap w-full bg-primary text-white py-3 font-semibold hover:bg-secondary transition-colors text-center block">
+Cotizar Ahora
+</a>
+</div>
+</div>
+<!-- Producto 2 -->
+<div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+<div class="aspect-w-16 aspect-h-12 bg-gray-100">
+<img src="https://readdy.ai/api/search-image?query=professional%20dual%20head%20embroidery%20machine%20Gangduo%20model%2C%20white%20clean%20background%2C%20industrial%20design%2C%20high%20quality%20photography%2C%20modern%20manufacturing%20equipment%20with%20two%20embroidery%20heads&width=600&height=400&seq=prod002&orientation=landscape"
+alt="Máquina de Bordado 2 Cabezas" class="w-full h-64 object-cover object-top">
+</div>
+<div class="p-4 sm:p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Gangduo 2 Cabezas</h3>
+<p class="text-gray-600 mb-4">Duplica tu productividad con esta máquina de doble cabeza. Ideal para talleres medianos.</p>
+<div class="flex items-center justify-between mb-4">
+<span class="text-2xl font-bold text-primary">$610,000 DOP</span>
+<span class="text-sm text-gray-500">Precio referencial</span>
+</div>
+<ul class="text-sm text-gray-600 mb-6 space-y-1">
+<li>• Área de bordado: 400 x 400 mm c/u</li>
+<li>• Velocidad: 1000 ppm</li>
+<li>• 15 colores automáticos</li>
+<li>• Control independiente</li>
+</ul>
+<a href="https://wa.me/18296433461?text=Hola, me interesa la máquina Gangduo de 2 cabezas. ¿Podrían enviarme más información?"
+target="_blank"
+class="!rounded-button whitespace-nowrap w-full bg-primary text-white py-3 font-semibold hover:bg-secondary transition-colors text-center block">
+Cotizar Ahora
+</a>
+</div>
+</div>
+<!-- Producto 3 -->
+<div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+<div class="aspect-w-16 aspect-h-12 bg-gray-100">
+<img src="https://readdy.ai/api/search-image?query=professional%20triple%20head%20embroidery%20machine%20Gangduo%20model%2C%20white%20clean%20background%2C%20industrial%20design%2C%20high%20quality%20photography%2C%20modern%20manufacturing%20equipment%20with%20three%20embroidery%20heads&width=600&height=400&seq=prod003&orientation=landscape"
+alt="Máquina de Bordado 3 Cabezas" class="w-full h-64 object-cover object-top">
+</div>
+<div class="p-4 sm:p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Gangduo 3 Cabezas</h3>
+<p class="text-gray-600 mb-4">Solución intermedia perfecta para aumentar la capacidad de producción sin grandes inversiones.</p>
+<div class="flex items-center justify-between mb-4">
+<span class="text-2xl font-bold text-primary">$750,000 DOP</span>
+<span class="text-sm text-gray-500">Precio referencial</span>
+</div>
+<ul class="text-sm text-gray-600 mb-6 space-y-1">
+<li>• Área de bordado: 400 x 400 mm c/u</li>
+<li>• Velocidad: 1000 ppm</li>
+<li>• 15 colores automáticos</li>
+<li>• Sistema de corte automático</li>
+</ul>
+<a href="https://wa.me/18296433461?text=Hola, me interesa la máquina Gangduo de 3 cabezas. ¿Podrían enviarme más información?"
+target="_blank"
+class="!rounded-button whitespace-nowrap w-full bg-primary text-white py-3 font-semibold hover:bg-secondary transition-colors text-center block">
+Cotizar Ahora
+</a>
+</div>
+</div>
+<!-- Producto 4 -->
+<div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+<div class="aspect-w-16 aspect-h-12 bg-gray-100">
+<img src="https://readdy.ai/api/search-image?query=professional%20quad%20head%20embroidery%20machine%20Gangduo%20model%2C%20white%20clean%20background%2C%20industrial%20design%2C%20high%20quality%20photography%2C%20modern%20manufacturing%20equipment%20with%20four%20embroidery%20heads&width=600&height=400&seq=prod004&orientation=landscape"
+alt="Máquina de Bordado 4 Cabezas" class="w-full h-64 object-cover object-top">
+</div>
+<div class="p-4 sm:p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Gangduo 4 Cabezas</h3>
+<p class="text-gray-600 mb-4">Máxima productividad para talleres industriales. La solución completa para grandes volúmenes.</p>
+<div class="flex items-center justify-between mb-4">
+<span class="text-2xl font-bold text-primary">$950,000 DOP</span>
+<span class="text-sm text-gray-500">Precio referencial</span>
+</div>
+<ul class="text-sm text-gray-600 mb-6 space-y-1">
+<li>• Área de bordado: 400 x 400 mm c/u</li>
+<li>• Velocidad: 1200 ppm</li>
+<li>• 15 colores automáticos</li>
+<li>• Sistema completo automatizado</li>
+</ul>
+<a href="https://wa.me/18296433461?text=Hola, me interesa la máquina Gangduo de 4 cabezas. ¿Podrían enviarme más información?"
+target="_blank"
+class="!rounded-button whitespace-nowrap w-full bg-primary text-white py-3 font-semibold hover:bg-secondary transition-colors text-center block">
+Cotizar Ahora
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section id="testimonios" class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Lo Que Dicen Nuestros Clientes</h2>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">
+Conoce las experiencias reales de empresarios que han transformado sus negocios con nuestras máquinas.
+</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+<div class="bg-white p-6 sm:p-8 rounded-xl shadow-sm">
+<div class="flex items-center mb-6">
+<img src="https://readdy.ai/api/search-image?query=professional%20hispanic%20woman%20business%20owner%20in%20embroidery%20workshop%2C%20confident%20smile%2C%20realistic%20portrait%20photography%2C%20natural%20lighting&width=80&height=80&seq=test001&orientation=squarish"
+alt="María González" class="w-16 h-16 rounded-full object-cover mr-4">
+<div>
+<h4 class="font-semibold text-gray-900">María González</h4>
+<p class="text-sm text-gray-600">Taller de Bordados MG</p>
+</div>
+</div>
+<p class="text-gray-600 mb-4">"La máquina Gangduo de 2 cabezas transformó completamente mi negocio. Ahora puedo atender el doble de pedidos con la misma calidad excepcional."</p>
+<div class="flex text-yellow-400">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<div class="bg-white p-6 sm:p-8 rounded-xl shadow-sm">
+<div class="flex items-center mb-6">
+<img src="https://readdy.ai/api/search-image?query=professional%20hispanic%20man%20entrepreneur%20in%20textile%20workshop%2C%20confident%20expression%2C%20realistic%20portrait%20photography%2C%20natural%20lighting&width=80&height=80&seq=test002&orientation=squarish"
+alt="Carlos Méndez" class="w-16 h-16 rounded-full object-cover mr-4">
+<div>
+<h4 class="font-semibold text-gray-900">Carlos Méndez</h4>
+<p class="text-sm text-gray-600">Bordados Industriales CM</p>
+</div>
+</div>
+<p class="text-gray-600 mb-4">"Excelente inversión. La máquina de 4 cabezas me permite manejar pedidos grandes sin problemas. El soporte técnico de ZIHOR es impecable."</p>
+<div class="flex text-yellow-400">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<div class="bg-white p-6 sm:p-8 rounded-xl shadow-sm">
+<div class="flex items-center mb-6">
+<img src="https://readdy.ai/api/search-image?query=professional%20hispanic%20woman%20textile%20business%20owner%2C%20happy%20expression%2C%20realistic%20portrait%20photography%2C%20natural%20lighting&width=80&height=80&seq=test003&orientation=squarish"
+alt="Ana Rodríguez" class="w-16 h-16 rounded-full object-cover mr-4">
+<div>
+<h4 class="font-semibold text-gray-900">Ana Rodríguez</h4>
+<p class="text-sm text-gray-600">Bordados Creativos AR</p>
+</div>
+</div>
+<p class="text-gray-600 mb-4">"Empecé con la máquina de 1 cabeza y ya estoy pensando en expandirme. La calidad del bordado es excepcional y muy fácil de usar."</p>
+<div class="flex text-yellow-400">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contacto" class="py-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contáctanos</h2>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">
+¿Listo para llevar tu negocio al siguiente nivel? Contáctanos para recibir una cotización personalizada.
+</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+<div>
+<div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+<h3 class="text-xl font-semibold text-gray-900 mb-6">Información de Contacto</h3>
+<div class="space-y-6">
+<div class="flex items-center">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+<i class="ri-phone-line text-xl text-primary"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-900">Teléfono</p>
+<p class="text-gray-600">829-643-3461</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+<i class="ri-whatsapp-line text-xl text-primary"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-900">WhatsApp</p>
+<p class="text-gray-600">Disponible 24/7</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+<i class="ri-time-line text-xl text-primary"></i>
+</div>
+<div>
+<p class="font-semibold text-gray-900">Horario</p>
+<p class="text-gray-600">Lun - Dom: 8:00 AM - 6:00 PM<br><span class="text-sm">(No laboramos sábados)</span></p>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<a href="https://wa.me/18296433461?text=Hola, me gustaría recibir más información sobre las máquinas de bordado Gangduo."
+target="_blank"
+class="!rounded-button whitespace-nowrap w-full bg-green-500 text-white py-4 font-semibold hover:bg-green-600 transition-colors text-center flex items-center justify-center">
+<i class="ri-whatsapp-line text-xl mr-2"></i>
+Chatear por WhatsApp
+</a>
+</div>
+</div>
+</div>
+<div>
+<div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+<h3 class="text-xl font-semibold text-gray-900 mb-6">Envíanos un Mensaje</h3>
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Nombre Completo</label>
+<input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Teléfono</label>
+<input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Producto de Interés</label>
+<select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent pr-8">
+<option>Seleccionar máquina</option>
+<option>Gangduo 1 Cabeza</option>
+<option>Gangduo 2 Cabezas</option>
+<option>Gangduo 3 Cabezas</option>
+<option>Gangduo 4 Cabezas</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Mensaje</label>
+<textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+</div>
+<button type="submit" class="!rounded-button whitespace-nowrap w-full bg-primary text-white py-3 font-semibold hover:bg-secondary transition-colors">
+Enviar Mensaje
+</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+<div class="col-span-1 md:col-span-2">
+<div class="logo-font text-2xl font-bold mb-4">ZIHOR</div>
+<p class="text-gray-400 mb-6 max-w-md">
+Especialistas en maquinaria de bordado profesional. Transformamos ideas en realidad con tecnología de vanguardia.
+</p>
+<div class="flex space-x-4">
+<a href="https://www.instagram.com/zihor.collections?igsh=eHU2eTk1dmdlczRi" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="https://www.tiktok.com/@zihorcollections" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-tiktok-line"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Enlaces Rápidos</h4>
+<ul class="space-y-2 text-gray-400">
+<li><a href="#inicio" class="hover:text-white transition-colors">Inicio</a></li>
+<li><a href="#productos" class="hover:text-white transition-colors">Productos</a></li>
+<li><a href="#testimonios" class="hover:text-white transition-colors">Testimonios</a></li>
+<li><a href="#contacto" class="hover:text-white transition-colors">Contacto</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Contacto</h4>
+<ul class="space-y-2 text-gray-400">
+<li>Tel: 829-643-3461</li>
+<li>WhatsApp disponible</li>
+<li>Lun - Dom: 8:00 AM - 6:00 PM</li>
+<li class="text-sm">(No laboramos sábados)</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+<p>&copy; 2024 ZIHOR. Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuBtn.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+});
+});
+</script>
+<script id="smooth-scroll-script">
+document.addEventListener('DOMContentLoaded', function() {
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+targetElement.scrollIntoView({
+behavior: 'smooth',
+block: 'start'
+});
+}
+});
+});
+});
+</script>
+<script id="form-handler-script">
+document.addEventListener('DOMContentLoaded', function() {
+const form = document.querySelector('form');
+form.addEventListener('submit', function(e) {
+e.preventDefault();
+const formData = new FormData(this);
+const nombre = this.querySelector('input[type="text"]').value;
+const telefono = this.querySelector('input[type="tel"]').value;
+const producto = this.querySelector('select').value;
+const mensaje = this.querySelector('textarea').value;
+const whatsappMessage = `Hola, soy ${nombre}. Estoy interesado en ${producto}. Mi teléfono es ${telefono}. ${mensaje}`;
+const whatsappUrl = `https://wa.me/18296433461?text=${encodeURIComponent(whatsappMessage)}`;
+window.open(whatsappUrl, '_blank');
+});
+});
+</script>
+<script>
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+    posthog.init('phc_t9tkQZJiyi2ps9zUYm8TDsL6qXo4YmZx0Ot5rBlAlEd', {
+        api_host: 'https://us.i.posthog.com',
+        autocapture: false,
+        capture_pageview: false,
+        capture_pageleave: false,
+        capture_performance: {
+            web_vitals: false,
+        },
+        rageclick: false,
+    })
+    window.shareKey = 'eoWZRR20lpk_jJQFayQhPA';
+</script>
+></script></body>
+</html>
